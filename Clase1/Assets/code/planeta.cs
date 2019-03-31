@@ -18,17 +18,18 @@ public class planeta : MonoBehaviour
     {
         Debug.Log("Este planeta se llama: " + planetName);
 
-        
+        transform.position = new Vector3(transform.position.x, 0.0f, transform.position.z);
+
+        actualPos = Random.Range(-180.0f, 180.0f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        actualPos += Time.deltaTime * speed;
-
         newx = sol.transform.position.x + radio * Mathf.Cos(actualPos);
         newz = sol.transform.position.z + radio * Mathf.Sin(actualPos);
-        transform.position = new Vector3(newx,transform.position.y,newz);
+        transform.position = new Vector3(newx, transform.position.y, newz);
 
+        actualPos += Time.deltaTime * speed;
     }
 }

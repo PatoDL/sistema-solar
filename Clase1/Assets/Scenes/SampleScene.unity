@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286fb78b028f11148aa8084951dcf2c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: 
+  planetName: Mars
   speed: 1
   radio: 40
   sol: {fileID: 1663363048}
@@ -248,8 +248,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.61723715, b: 0, a: 1}
-  m_Intensity: 25.96
-  m_Range: 16.97
+  m_Intensity: 4.8
+  m_Range: 41.13921
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -283,7 +283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170076733}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -0.3, y: -0.5, z: -13.7}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.8658645, y: 3.8658645, z: 3.8658645}
   m_Children: []
   m_Father: {fileID: 0}
@@ -591,7 +591,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328766477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.112, y: 4.325633, z: -15.906843}
+  m_LocalPosition: {x: 14.7, y: 4.325633, z: -15.906843}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286fb78b028f11148aa8084951dcf2c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: 
+  planetName: Uranus
   speed: 1
   radio: 70
   sol: {fileID: 1663363048}
@@ -825,7 +825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286fb78b028f11148aa8084951dcf2c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: 
+  planetName: Saturn
   speed: 1
   radio: 60
   sol: {fileID: 1663363048}
@@ -840,6 +840,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -904,13 +905,36 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.3769772, y: -0.5040259, z: 0.25275204, w: 0.73482144}
-  m_LocalPosition: {x: 12.55, y: 19.61, z: -13.63}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.08, y: 19.61, z: -12.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 53.980003, y: -69.318, z: -0.83400005}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a56bb023ca36e84eacc05f9b6a7202f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sol: {fileID: 1663363048}
+  planetas:
+  - {fileID: 1663363048}
+  - {fileID: 385849426}
+  - {fileID: 283485529}
+  - {fileID: 302928252}
+  - {fileID: 16233924}
+  - {fileID: 1147365534}
+  - {fileID: 431326102}
+  - {fileID: 328766477}
+  - {fileID: 899443057}
 --- !u!1 &899443057
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +1021,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899443057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.32, y: 4.325633, z: -15.906843}
+  m_LocalPosition: {x: -1.02, y: 0.753, z: -25.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1015,7 +1039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286fb78b028f11148aa8084951dcf2c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: 
+  planetName: Neptune
   speed: 1
   radio: 80
   sol: {fileID: 1663363048}
@@ -1212,7 +1236,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663363048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.66, z: -14.56}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 9.257473, y: 9.257473, z: 9.257473}
   m_Children: []
   m_Father: {fileID: 0}
