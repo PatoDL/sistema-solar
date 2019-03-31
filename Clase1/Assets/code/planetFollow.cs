@@ -14,11 +14,13 @@ public class planetFollow : MonoBehaviour
 
     int i = 0;
 
+    Vector3 offset;
+
     // Start is called before the first frame update
     void Start()
     {
         Camera.main.transform.position = new Vector3(sol.transform.position.x,
-            sol.transform.position.y + sol.transform.localScale.y + 3, sol.transform.position.z);
+            sol.transform.position.y + sol.transform.localScale.y*2, sol.transform.position.z);
     }
 
     // Update is called once per frame
@@ -36,8 +38,8 @@ public class planetFollow : MonoBehaviour
             i = 0;
         }
 
+        Camera.main.transform.position = new Vector3(planetas[i].transform.position.x, planetas[i].transform.position.y, planetas[i].transform.position.z - planetas[i].transform.localScale.z * 2);
 
-        Camera.main.transform.position = new Vector3(planetas[i].transform.position.x,
-           planetas[i].transform.position.y - planetas[i].transform.localScale.y*2, planetas[i].transform.position.z);
+        Camera.main.transform.LookAt(planetas[i].transform);
     }
 }
