@@ -7,9 +7,9 @@ public class planeta : MonoBehaviour
     public string planetName;
     public float speed;
     public int radio;
-    public float actualPos;
 
-    public float newx, newz;
+    float actualPos;
+    float newx, newz;
 
     public GameObject sol;
 
@@ -17,6 +17,8 @@ public class planeta : MonoBehaviour
     void Start()
     {
         Debug.Log("Este planeta se llama: " + planetName);
+
+        
     }
 
     // Update is called once per frame
