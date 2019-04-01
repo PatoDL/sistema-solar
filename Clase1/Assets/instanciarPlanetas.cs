@@ -17,8 +17,7 @@ public class instanciarPlanetas : MonoBehaviour
             {
                 Transform p = Instantiate(planeta);
                 p.GetComponent<pfPlaneta>().radio = i * 10;
-                p.transform.position = new Vector3(sol.transform.position.x, sol.transform.position.y,
-                    sol.transform.position.z + p.GetComponent<pfPlaneta>().radio);
+                p.GetComponent<pfPlaneta>().sol = sol;
             }
         }
     }
